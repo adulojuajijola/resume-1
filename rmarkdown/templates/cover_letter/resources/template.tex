@@ -1,0 +1,37 @@
+\documentclass[11pt,a4paper]{letter}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{newcent}
+\usepackage{graphicx}
+\geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
+%\setlength\headheight{12\p@}
+%\setlength\headsep   {45\p@}
+\address{$applicant.name$ \\ $applicant.address1$ \\ $applicant.address2$ \\ $if(applicant.address3)$ $applicant.address3$\\$endif$ }
+
+% \signature{$applicant.name$} 
+\begin{document} 
+\begin{letter}{$employer.name$ \\ $employer.address1$ \\ $employer.address2$ \\ $employer.address3$} 
+\opening{Dear Recruiting Team,} 
+With this letter I hereby wish to apply for the \textbf{$job.title$} position at $employer.name$ in $job.location$.
+
+$whothey$
+
+Currently, I work as a Post-Doctoral Fellow at the University of Missouri, Kansas City School of Medicine with the Community Health Research Group. We partner with community and faith-based organizations to address health disparities such as HIV/AIDS, diabetes, heart disease and stroke; and mental health among African American congregants and community members in the Kansas City, Missouri and Kansas area. As a TL1-Post Doctoral Fellow, I recieved grant funding to culturally and religiously tailor the ARTAS-strength based system to increase the number of African Americans living with HIV, linked and retained in care. In addition, I am the primary investigator of a community health needs assessment for African American men who have sex with men in tandem with a local African American MSM community coalition, and the co-investigator of a multisite college student sexual health study.
+
+$needs$
+
+Please find out more on my qualifications in the enclosed CV. Thank you in advance for your consideration. I welcome the opportunity to continue this discussion via e-mail.
+
+\closing\hfill{Warmly,\\
+\fromsig{\includegraphics[scale=1]{signature.png}} \\
+\fromname{$for(applicant)$$applicant.name$$sep$, $endfor$}
+}
+
+%\cc{Cclist} 
+%\ps{adding a postscript} 
+% \encl{Résumé} 
+\end{letter} 
+\end{document}
